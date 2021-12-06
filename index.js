@@ -1,7 +1,17 @@
 function updateLight(current) {
   
-    //your code here!
-  
+    let trafLight = '';
+    switch (current) {
+        case 'green':
+            return trafLight = 'yellow';
+            break;
+        case 'yellow':
+            return trafLight = 'red';
+            break;
+        case 'red':
+            return trafLight = 'green';
+            break;
+    }
 }
 
 console.log(updateLight("green")); // Return 'yellow'
